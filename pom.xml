@@ -15,9 +15,6 @@
     <description>
         Jahia Bootstrap Aggregator Module for all Jahia Bootstrap modules. 
     </description>   
-    <properties>
-        <twbs.version>3.3.5</twbs.version>
-    </properties>
     <scm>
         <connection>scm:git:git@github.com:Avantia-Inc/jahia-bootstrap-modules.git</connection>
         <developerConnection>scm:git:git@github.com:Avantia-Inc/jahia-bootstrap-modules.git</developerConnection>
