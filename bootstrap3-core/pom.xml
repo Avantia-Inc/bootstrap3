@@ -3,52 +3,20 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <artifactId>bootstrap3-modules</artifactId>
-        <groupId>org.jahia.modules</groupId>
-        <version>1.1-SNAPSHOT</version>
+        <groupId>com.avantia-inc.jahia</groupId>
+        <artifactId>bootstrap-modules</artifactId>
+        <version>1.0-SNAPSHOT</version>
     </parent>
-    <groupId>org.jahia.modules</groupId>
     <artifactId>bootstrap3-core</artifactId>
-    <name>Bootstrap 3 Core</name>
-    <version>3.3.5</version>
+    <name>Bootstrap Assets</name>
+    <version>${twbs.version}</version>
     <packaging>bundle</packaging>
-    <description>This is the custom module (Bootstrap 3 Core) for running on a Jahia server.</description>
-    <scm>
-        <connection>scm:git:git@github.com:Jahia/bootstrap3.git</connection>
-        <developerConnection>scm:git:git@github.com:Jahia/bootstrap3.git</developerConnection>
-        <url>scm:git:git@github.com:Jahia/bootstrap3.git</url>
-    </scm>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>jar</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>jar</goal>
-                        </goals>
-                        <configuration>
-                            <classifier>classes</classifier>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.felix</groupId>
-                <artifactId>maven-bundle-plugin</artifactId>
-                <extensions>true</extensions>
-                <configuration>
-                    <instructions>
-                        <Jahia-Root-Folder>${project.artifactId}</Jahia-Root-Folder>
-                        <Jahia-Depends>jquery</Jahia-Depends>
-                        <Jahia-Static-Resources>/css,/icons,/images,/img,/javascript,/fonts</Jahia-Static-Resources>
-                    </instructions>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
-    <dependencies/>
+    <description>
+        Bootstrap Assets Module (a.k.a. Bootstrap 3 Core) for Jahia Digital Factory. 
+        Module version matches the currently supported Twitter Bootstrap Framework.
+    </description>
+    <properties>
+        <jahia-depends>default</jahia-depends>
+        <jahia-static-resources>/css,/icons,/images,/img,/javascript,/fonts</jahia-static-resources>
+    </properties>
 </project>
