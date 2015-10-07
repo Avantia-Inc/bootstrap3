@@ -9,7 +9,7 @@
     </parent>
     <artifactId>bootstrap3-core</artifactId>
     <name>Bootstrap Assets</name>
-    <version>${twbs.version}</version>
+    <version>3.3.5</version>
     <packaging>bundle</packaging>
     <description>
         Bootstrap Assets Module (a.k.a. Bootstrap 3 Core) for Jahia Digital Factory. 
