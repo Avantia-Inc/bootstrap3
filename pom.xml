@@ -8,7 +8,6 @@
         <version>7.1.0.0</version>
         <relativePath/>
     </parent>
-    <groupId>com.avantia-inc.jahia</groupId>
     <artifactId>bootstrap-modules</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>Jahia Bootstrap Modules</name>
