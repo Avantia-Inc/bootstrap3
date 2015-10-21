@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <parent>
-        <groupId>org.jahia.modules</groupId>
-        <artifactId>bootstrap-modules</artifactId>
-        <version>1.0-SNAPSHOT</version>
-    </parent>
-    <artifactId>bootstrap3-core</artifactId>
-    <name>Bootstrap Assets</name>
-    <version>3.3.5</version>
-    <packaging>bundle</packaging>
-    <description>
-        Bootstrap Assets Module (a.k.a. Bootstrap 3 Core) for Jahia Digital Factory. 
-        Module version matches the currently supported Twitter Bootstrap Framework.
-    </description>
-    <properties>
-        <jahia-depends>default</jahia-depends>
-        <jahia-static-resources>/css,/icons,/images,/img,/javascript,/fonts</jahia-static-resources>
-    </properties>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.jahia.modules</groupId>
+    <artifactId>bootstrap-modules</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+  <artifactId>bootstrap3-core</artifactId>
+  <version>3.3.5</version>
+  <packaging>bundle</packaging>
+  <name>Bootstrap Assets</name>
+  <description>Bootstrap Assets Module (a.k.a. Bootstrap 3 Core) for Jahia Digital Factory. 
+        Module version matches the currently supported Twitter Bootstrap Framework.</description>
+  <properties>
+    <jahia-static-resources>/css,/icons,/images,/img,/javascript,/fonts</jahia-static-resources>
+    <jahia-depends>default,jquery</jahia-depends>
+  </properties>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-bundle-plugin</artifactId>
+        <extensions>true</extensions>
+      </plugin>
+    </plugins>
+  </build>
 </project>
